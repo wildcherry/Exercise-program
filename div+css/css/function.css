@@ -1,0 +1,83 @@
+.content .content-bottom{
+	width: 940px;
+	padding-bottom: 74px;
+}
+.content .content-bottom .function {
+	float: left;
+	width: 600px;
+}
+.content .content-bottom .function h3{
+    color: #fff;
+	font-size: 36px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.content .content-bottom .function p{
+    color: #7f7f7f;
+	font-size: 14px;
+	font-family: verdana;
+	line-height: 20px;
+	margin-bottom: 26px;	
+}
+
+.content .content-bottom .function img {
+	display: block;
+	float: left;
+}
+.content .content-bottom .function .second{
+	width: 357px;
+	float: right;
+	margin-bottom: 20px;
+}
+
+.content .content-bottom .sidebar{
+	float: right;
+	width: 300px;
+}
+
+.content .content-bottom .sidebar h2{
+	width: 278px;
+	height: 48px;
+	background-color: #000;
+	border-radius: 5px;
+	font-size: 26px;
+	color: #fff;
+	padding-left: 22px;
+	margin-top: 40px;
+	line-height: 48px;
+}
+
+.content .content-bottom .sidebar p{
+    width: 274px;
+    margin-left: 22px;
+    margin-top: 30px;
+    color: #7f7f7f;
+	font-size: 14px;
+	font-family: verdana;
+	line-height: 20px;
+}
+
+.content .content-bottom .sidebar li{
+	
+ 	font-family: verdana;
+ 	line-height: 34px;
+ 	font-size: 12px;
+ 	color: #fff;
+ 	width: 236px;
+ 	height: 34px;
+ 	border-bottom: 1px dashed #3c3d3d;
+ }
+ .content .content-bottom .sidebar ol{
+ 	margin-top: 40px;
+ 	margin-left: 22px;
+ }
+
+ .content .content-bottom .sidebar ol .last{
+ 	border-bottom: none;
+
+ }
+ .content .content-bottom .sidebar .list{
+ 	margin-left: 22px;
+ 	margin-top: 32px;
+ }

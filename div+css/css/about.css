@@ -1,0 +1,198 @@
+.banner {
+	height: 283px;
+	background-image:url(../images/banner-bg_09.png); 
+	padding-top: 65px;
+}
+
+.banner-inner{
+	width: 940px;
+	margin:0 auto;
+	position: relative;
+}
+
+.banner-inner .artical{
+	float: left;
+	width: 588px;
+	
+}
+
+.banner-inner .artical h3{
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 24px;
+}
+
+.banner-inner .artical p{
+	font-size: 14px;
+	color:#7f7f7f;
+	font-family: verdana;
+}
+.banner-inner .image{
+	float: left;
+	position: absolute;
+	top:-101px;
+	right: -31px;
+
+}
+
+.banner-inner span{
+	color:#cc250d;
+	text-decoration: underline;
+}
+
+.content {
+	background-image: url(../images/content-bg_10.png);
+} 
+
+.content-inner{
+	width: 940px;
+	margin:0 auto;
+	padding-top: 40px;
+} 
+
+
+.content .content-top .second{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.content .content-bottom{
+	width: 940px;
+	padding-bottom: 60px;
+}
+
+.content-bottom .event{
+	float: left;
+	width: 619px;
+}
+.content-bottom .event h3{
+ 	font-size: 26px;
+ 	color: #fff;
+ 	margin-top:12px;
+ 	margin-bottom: 22px;
+ }
+ .content-bottom .adventure{
+	float: right;
+	width: 300px;
+}
+ .content-bottom .adventure h3{
+ 	font-size: 20px;
+ 	color: #fff;
+ 	margin-top: 16px;
+ 	margin-bottom: 
+ }
+
+ .content-bottom .event .artical-top{
+ 	width: 619px;
+ 	
+ }
+.content-bottom .event .artical-top .image {
+    float: left;
+    padding-bottom: 30px;
+ }
+
+ .content .content-bottom .event .artical{
+   float: right;
+   width: 538px;
+   font-size: 14px;
+   color:#7f7d68;
+   font-family: verdana;
+ }  
+
+ .content .content-bottom .event .artical p{
+ 	margin-bottom: 24px;
+ 	line-height: 28px;
+
+ }
+
+ .content .content-bottom .event span {
+ 	color: #fff;
+ }
+
+
+ .content .content-bottom .event .artical-bottom{
+ 	margin-top: 55px;
+ 	padding-top: 55px;
+ 	width: 619px;
+ 	font-size: 14px;
+    color:#7f7d68;
+    font-family: verdana;
+    border-top: 1px dashed #3c3d3d;
+
+ }
+ .content .content-bottom .event .artical-bottom .image{
+ 	float: left;
+ 	margin-right: 21px;
+ }  
+ .content .content-bottom .event .artical-bottom .image-a{
+ 	float: left;
+ }            
+
+
+ .content .content-bottom .event .artical-bottom p{
+ 	float: right;
+    width: 302px;
+    line-height: 28px;
+ }
+
+ .content .content-bottom .adventure h3{
+ 	width: 279px;
+ 	height: 48px;
+ 	background-color: #111212;
+ 	border-radius: 5px;
+ 	line-height: 48px;
+ 	padding-left: 22px
+ }
+
+ .content .content-bottom .adventure li{
+ 	/*list-style-position: inside;
+ 	list-style-image:url(../images/list-style_03.png);*/
+ 	background-image: url(../images/list-style_03.png);
+ 	background-repeat: no-repeat;
+ 	background-position: left 13px; 
+ 	text-indent: 10px;
+ 	font-style: italic;
+ 	font-family: verdana;
+ 	line-height: 34px;
+ 	font-size: 12px;
+ 	color: #fff;
+ 	width: 236px;
+ 	height: 34px;
+ 	border-bottom: 1px dashed #3c3d3d;
+ }
+ .content .content-bottom .adventure ul .last{
+ 	border-bottom: none;
+ }
+ .content .content-bottom .adventure ul{
+ 	margin-left: 30px;
+ 	margin-top: 7px;
+ }
+
+ .content .content-bottom .adventure .news{
+ 	width: 300px;
+ 	height: 232px;
+ 	background-color: #101111;
+ 	border-radius: 5px;
+ 	margin-top: 50px;
+ }
+ .content .content-bottom .adventure .news h2{
+    font-size: 20px;
+    margin-left: 21px;
+    padding-top: 21px;
+    color: #fff;
+ 	}
+
+ .content .content-bottom .adventure .news img{
+ 	margin:21px;
+ }
+
+ .content .content-bottom .adventure .news span {
+ 	
+ 	color: #fff;
+ }
+ .content .content-bottom .adventure .news p{
+ 	font-family: verdana;
+ 	color: #667b7f;
+ 	margin-left: 21px;
+ 	font-size: 14px;
+ }

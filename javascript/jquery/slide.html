@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="fa/css/font-awesome.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrapper img{
+			height: 100%;
+		}
+		.icon span{
+			display: block;
+			width: 80px;
+			height: 60px;
+			background-color: #bada33;
+			border: 1px solid #333;
+			line-height: 60px;
+			text-align: right;
+		}
+		.icon{
+			position: absolute;
+			top: 243px;
+			left: -20px;
+			position: fixed;
+
+		}
+		.icon .fa{
+			font-size: 40px;
+			color: #300;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<img src="images/pic6.jpg" alt="">
+		<img src="images/pic7.jpg" alt="">
+		<img src="images/pic8.jpg" alt="">
+		<img src="images/pic9.jpg" alt="">
+	</div>
+	<div class="icon">
+		<span class="fa fa-linkedin-square"></span>
+		<span class="fa fa-github-square"></span>
+		<span class="fa fa-facebook-square"></span>
+		<span class="fa fa-twitter-square"></span>
+	</div>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$("span").hover(function(){
+			$(this).animate({"margin-left":20},200)
+		},function(){
+			$(this).animate({"margin-left":-20},200)
+		})
+		$("span").click(function(){
+			var ind = $(this).index();
+			var martop = ind * -758;
+			// $(".wrapper").animate({"margin-top":martop},1000)
+			var scroll_offset = $(".wrapper img:nth-child("+(ind+1)+")").offset(); 
+			$("body,html").animate({
+             scrollTop:scroll_offset.top  //让body的scrollTop等于pos的top，就实现了滚动
+           },700);
+		})
+		 
+
+	</script>
+</body>
+</html>

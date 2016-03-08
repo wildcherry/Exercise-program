@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	    div{
+	    	width: 900px;
+	    	margin: 0 auto;
+	    }
+		img{
+			cursor: pointer;
+			display: block;
+			float: left;
+			margin-right: 20px;
+			height: auto;
+			width: 200px;
+		}
+		.active{
+           width:300px;
+           height: auto;1
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="images/pic1.jpg" alt="" class="pic">
+		<img src="images/pic2.jpg" alt="" class="pic">
+		<img src="images/pic3.jpg" alt="" class="pic">
+		<img src="images/pic4.jpg" alt="" class="pic">
+	</div>
+	<div class="empty"></div>
+	<script src= "jquery-1.11.1.js"></script>
+	<script>
+      $(".pic").mouseenter(function(){
+      	 $(".empty").append("<img>");
+      	 $(".empty img").fadeIn(1000);
+          var src = $(this).prop("src")
+         $(".empty img").attr("src",src);
+         $(".empty img").addClass("active")
+      }).mouseleave(function(){
+      	
+      	 $(".empty img").fadeOut(1000);
+      	 $(".empty img").remove();
+      }).mousemove(function(event){
+      	 var x = event.pageX;
+      	 var y = event.pageY;
+      	 console.log(x)
+      	 $(".empty img").css({"position":"absolute","left":x+20,"top":y})
+
+      })
+      
+	</script>
+</body>
+</html>

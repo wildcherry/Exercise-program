@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+<title>Document</title>
+<link href="css/main.css" rel="stylesheet" />
+<!--[if lt ie 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->	
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript">
+Modernizr.load([
+{
+test: Modernizr.mq('only all'),	
+nope: 'js/respond.min.js'
+},
+{
+test: Modernizr.mq('only screen and (max-width:414px)'),
+yep: 'js/jquery.mobilemenu.js',
+callback: function(){
+		$(document).ready(function(){
+			$('#mainNav').mobileMenu({
+      		switchWidth: 414,                   //width (in px to switch at)
+      		topOptionText: 'Select a page',     //first option text
+      		indentString: '&nbsp;&nbsp;&nbsp;'  //string for indenting nested items
+      	});
+			
+		})
+	}
+}
+])
+
+
+</script>
+</head>
+<body id="home">
+
+<div id="wrapper"> 
+	<!-- the header and navigation -->
+	<header role="banner" class="group">
+		<a href="/"><div id="logo">And the winner is<span>n't...</span></div></a>
+		<nav role="navigation"> 
+			<ul id="mainNav">
+				<li><a href="#">Why?</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Offline</a></li>
+				<li><a href="#">Redemption</a></li>
+				<li><a href="#">Videos/clips</a></li>
+				<li><a href="#">Quiz</a></li>
+			</ul>
+		</nav> 	
+	</header> 
+	<!-- the content -->
+	<div id="content" role="main">
+		
+		<img class="oscarMain" src="img/oscar.png" alt="atwi_oscar" />
+		<h1>Every year <em>when I watch the Oscars I'm annoyed…</em></h1>
+		<p>that films like <b>King Kong</b>, <b>Moulin Rouge</b> and <b>Munich</b> get the statue whilst the <em>real</em> cinematic heroes lose out. Not very Hollywood is it?</p>
+<p><i>We’re here to put things right.</i></p>
+	<a class="button" href="#">these should have won <span>&raquo;</span></a>	
+    <div class="cf"></div>
+	</div>
+	<!-- the sidebar -->
+	<aside>
+		<section role="complementary">
+			<div class="sideBlock unSung">
+				<h1>Unsung heroes...</h1>
+				<a href="#"><img src="img/midnightRun.jpg" alt="Midnight Run" /><span class="moreInfo">more info</span></a>
+				<a href="#"><img class="sideImage" src="img/wyattEarp.jpg" alt="Wyatt Earp" /><span class="moreInfo">more info</span></a>
+			</div>
+		</section>
+		<section role="complementary">
+			<div class="sideBlock overHyped">
+				<h1>Overhyped nonsense...</h1>
+				<a href="#"><img src="img/moulinRouge.jpg" alt="Moulin Rouge" /><span class="moreInfo">more info</span></a>
+				<a href="#"><img class="sideImage" src="img/kingKong.jpg" alt="King Kong" /><span class="moreInfo">more info</span></a>
+			</div>
+		</section>
+	</aside> 
+	<!-- the footer -->
+	<footer role="contentinfo"> 
+		<p>Note: our opinion is absolutely correct. You are wrong, even if you think you are right. That’s a fact. Deal with it. <span> Made by <a href="http://benfrain.com">benfrain.com</a>. </span><span> Site code as <a href="#s">ZIP file</a></span></p> 
+	</footer> 
+
+</div> 
+</body>
+</html>

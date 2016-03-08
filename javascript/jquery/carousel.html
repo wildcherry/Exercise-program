@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片轮播</title>
+	<style>
+        .bigbox{
+        	width: 300px;
+        	overflow: hidden;
+        	margin-left: 500px;
+        }
+        .box{
+        	width: 1200px; 	
+        }
+        .button{
+        	margin-left: 600px;
+        	margin-top: 10px;
+        }
+		img{
+			width: 300px;
+			height: auto;
+			display: block;
+			float: left;
+		}
+		.active{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="bigbox">
+		<div class="box">
+			<img src="images/pic1.jpg" alt="">
+			<img src="images/pic2.jpg" alt="">
+			<img src="images/pic3.jpg" alt="">
+			<img src="images/pic4.jpg" alt="">
+		</div>
+	</div>
+	<div class="button">
+		<input type="button" class= "btn" value="1">
+		<input type="button" class= "btn" value="2">
+		<input type="button" class= "btn" value="3">
+		<input type="button" class= "btn" value="4">
+	</div>
+	<script src= "jquery-1.11.1.js"></script>
+	<script>
+	    var n = 0;
+		function auto(){
+		  n = n == 4?0:n;
+          var marleft = n * -300;
+          $(".box").animate({"margin-left":marleft},500);
+         
+          $("input").eq(n).addClass("active").siblings().removeClass("active");
+           n++
+		}
+		setInterval(auto,1500); 
+
+		$(".btn").click(function(){
+			var ind = $(this).index();
+			var marleft = ind * -300;
+			$(".box").animate({"margin-left":marleft},500);
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+
+
+		
+	</script>
+</body>
+</html>
